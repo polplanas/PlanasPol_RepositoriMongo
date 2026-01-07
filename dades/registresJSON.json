@@ -1,0 +1,242 @@
+[
+  {
+    "nom": "Kylian",
+    "cognom": "Mbappé",
+    "equip": "Real Madrid",
+    "posicio": "Davanter",
+    "dorsal": 9,
+    "dataFitxatge": "2024-07-01",
+    "gols": 18,
+    "nacionalitat": "Francesa"
+  },
+  {
+    "nom": "Jude",
+    "cognom": "Bellingham",
+    "equip": "Real Madrid",
+    "posicio": "Migcampista",
+    "dorsal": 5,
+    "dataFitxatge": "2023-07-01",
+    "gols": 23,
+    "nacionalitat": "Anglesa"
+  },
+  {
+    "nom": "Vinicius",
+    "cognom": "Junior",
+    "equip": "Real Madrid",
+    "posicio": "Davanter",
+    "dorsal": 7,
+    "dataFitxatge": "2018-07-12",
+    "gols": 20,
+    "nacionalitat": "Brasilera"
+  },
+  {
+    "nom": "Pedri",
+    "cognom": "Gonzalez",
+    "equip": "FC Barcelona",
+    "posicio": "Migcampista",
+    "dorsal": 8,
+    "dataFitxatge": "2020-09-01",
+    "gols": 7,
+    "nacionalitat": "Espanyola"
+  },
+  {
+    "nom": "Gavi",
+    "cognom": "Paez",
+    "equip": "FC Barcelona",
+    "posicio": "Migcampista",
+    "dorsal": 6,
+    "dataFitxatge": "2021-07-01",
+    "gols": 5,
+    "nacionalitat": "Espanyola"
+  },
+  {
+    "nom": "Lamine",
+    "cognom": "Yamal",
+    "equip": "FC Barcelona",
+    "posicio": "Davanter",
+    "dorsal": 27,
+    "dataFitxatge": "2023-07-01",
+    "gols": 6,
+    "nacionalitat": "Espanyola"
+  },
+  {
+    "nom": "Erling",
+    "cognom": "Haaland",
+    "equip": "Manchester City",
+    "posicio": "Davanter",
+    "dorsal": 9,
+    "dataFitxatge": "2022-07-01",
+    "gols": 27,
+    "nacionalitat": "Noruega"
+  },
+  {
+    "nom": "Kevin",
+    "cognom": "De Bruyne",
+    "equip": "Manchester City",
+    "posicio": "Migcampista",
+    "dorsal": 17,
+    "dataFitxatge": "2015-08-30",
+    "gols": 8,
+    "nacionalitat": "Belga"
+  },
+  {
+    "nom": "Phil",
+    "cognom": "Foden",
+    "equip": "Manchester City",
+    "posicio": "Migcampista",
+    "dorsal": 47,
+    "dataFitxatge": "2017-07-01",
+    "gols": 15,
+    "nacionalitat": "Anglesa"
+  },
+  {
+    "nom": "Bukayo",
+    "cognom": "Saka",
+    "equip": "Arsenal",
+    "posicio": "Davanter",
+    "dorsal": 7,
+    "dataFitxatge": "2019-07-01",
+    "gols": 14,
+    "nacionalitat": "Anglesa"
+  },
+  {
+    "nom": "Martin",
+    "cognom": "Ødegaard",
+    "equip": "Arsenal",
+    "posicio": "Migcampista",
+    "dorsal": 8,
+    "dataFitxatge": "2021-08-20",
+    "gols": 11,
+    "nacionalitat": "Noruega"
+  },
+  {
+    "nom": "Mohamed",
+    "cognom": "Salah",
+    "equip": "Liverpool",
+    "posicio": "Davanter",
+    "dorsal": 11,
+    "dataFitxatge": "2017-06-22",
+    "gols": 19,
+    "nacionalitat": "Egípcia"
+  },
+  {
+    "nom": "Virgil",
+    "cognom": "van Dijk",
+    "equip": "Liverpool",
+    "posicio": "Defensa",
+    "dorsal": 4,
+    "dataFitxatge": "2018-01-01",
+    "gols": 4,
+    "nacionalitat": "Neerlandesa"
+  },
+  {
+    "nom": "Harry",
+    "cognom": "Kane",
+    "equip": "Bayern Munich",
+    "posicio": "Davanter",
+    "dorsal": 9,
+    "dataFitxatge": "2023-08-12",
+    "gols": 30,
+    "nacionalitat": "Anglesa"
+  },
+  {
+    "nom": "Jamal",
+    "cognom": "Musiala",
+    "equip": "Bayern Munich",
+    "posicio": "Migcampista",
+    "dorsal": 42,
+    "dataFitxatge": "2020-07-01",
+    "gols": 12,
+    "nacionalitat": "Alemanya"
+  },
+  {
+    "nom": "Lautaro",
+    "cognom": "Martinez",
+    "equip": "Inter de Milà",
+    "posicio": "Davanter",
+    "dorsal": 10,
+    "dataFitxatge": "2018-07-04",
+    "gols": 24,
+    "nacionalitat": "Argentina"
+  },
+  {
+    "nom": "Victor",
+    "cognom": "Osimhen",
+    "equip": "Napoli",
+    "posicio": "Davanter",
+    "dorsal": 9,
+    "dataFitxatge": "2020-07-31",
+    "gols": 18,
+    "nacionalitat": "Nigeriana"
+  },
+  {
+    "nom": "Antoine",
+    "cognom": "Griezmann",
+    "equip": "Atlético de Madrid",
+    "posicio": "Davanter",
+    "dorsal": 7,
+    "dataFitxatge": "2021-08-30",
+    "gols": 16,
+    "nacionalitat": "Francesa"
+  },
+  {
+    "nom": "Jan",
+    "cognom": "Oblak",
+    "equip": "Atlético de Madrid",
+    "posicio": "Porter",
+    "dorsal": 13,
+    "dataFitxatge": "2014-07-16",
+    "gols": 0,
+    "nacionalitat": "Eslovena"
+  },
+  {
+    "nom": "Cristiano",
+    "cognom": "Ronaldo",
+    "equip": "Al-Nassr",
+    "posicio": "Davanter",
+    "dorsal": 7,
+    "dataFitxatge": "2023-01-01",
+    "gols": 28,
+    "nacionalitat": "Portuguesa"
+  },
+  {
+    "nom": "Neymar",
+    "cognom": "Junior",
+    "equip": "Al-Hilal",
+    "posicio": "Davanter",
+    "dorsal": 10,
+    "dataFitxatge": "2023-08-15",
+    "gols": 15,
+    "nacionalitat": "Brasilera"
+  },
+  {
+    "nom": "Rodri",
+    "cognom": "Hernandez",
+    "equip": "Manchester City",
+    "posicio": "Migcampista",
+    "dorsal": 16,
+    "dataFitxatge": "2019-07-04",
+    "gols": 9,
+    "nacionalitat": "Espanyola"
+  },
+  {
+    "nom": "Bernardo",
+    "cognom": "Silva",
+    "equip": "Manchester City",
+    "posicio": "Migcampista",
+    "dorsal": 20,
+    "dataFitxatge": "2017-07-01",
+    "gols": 10,
+    "nacionalitat": "Portuguesa"
+  },
+  {
+    "nom": "Rafael",
+    "cognom": "Leão",
+    "equip": "AC Milan",
+    "posicio": "Davanter",
+    "dorsal": 10,
+    "dataFitxatge": "2019-08-01",
+    "gols": 13,
+    "nacionalitat": "Portuguesa"
+  }
+]
