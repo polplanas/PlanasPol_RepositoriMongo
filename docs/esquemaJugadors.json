@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "_id",
+    "cognom",
+    "dataFitxatge",
+    "dorsal",
+    "equip",
+    "nacionalitat",
+    "nom",
+    "posicio"
+  ],
+  "properties": {
+    "_id": {
+      "$ref": "#/$defs/ObjectId"
+    },
+    "cognom": {
+      "type": "string"
+    },
+    "dataFitxatge": {
+      "$ref": "#/$defs/Date"
+    },
+    "dorsal": {
+      "type": "integer"
+    },
+    "equip": {
+      "type": "string"
+    },
+    "gols": {
+      "type": "integer"
+    },
+    "nacionalitat": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "posicio": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "ObjectId": {
+      "type": "object",
+      "properties": {
+        "$oid": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{24}$"
+        }
+      },
+      "required": [
+        "$oid"
+      ],
+      "additionalProperties": false
+    },
+    "Date": {
+      "type": "object",
+      "properties": {
+        "$date": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "$date"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

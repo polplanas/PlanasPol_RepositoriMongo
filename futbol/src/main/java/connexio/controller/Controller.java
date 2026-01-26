@@ -1,56 +1,90 @@
 package connexio.controller;
 
-import org.bson.Document;
+import java.time.LocalDate;
+import java.util.Scanner;
 
-import connexio.dao.JugadorDAO;
+import connexio.model.Model;
 import connexio.view.MenuView;
 
 public class Controller {
 
-    private JugadorDAO dao;
-    private MenuView view;
+    public static void main(String[] args) {
 
-    public Controller(JugadorDAO dao, MenuView view) {
-        this.dao = dao;
-        this.view = view;
-    }
+        Model model = new Model();
+        MenuView view = new MenuView();
+        Scanner sc = new Scanner(System.in);
 
-    public void iniciar() {
         int opcio;
 
         do {
             opcio = view.mostrarMenu();
 
             switch (opcio) {
-                case 1: dao.inserir(view.llegirJugador());
-                break;
 
-                case 2: {
-                    int i = 1;
-                    for (Document d : dao.llistar()) {
-                        System.out.println("Jugador " + i + ": "
-                                + d.getString("nom") + " "
-                                + d.getString("cognom") + " - "
-                                + d.getString("equip"));
-                        i++;
-                    }
-                }
-                break;
+                // -------------------------
+                // CREATE
+                // -------------------------
+                case 1:
+                    model.inserirJugador(view.llegirJugador());
+                    System.out.println("Jugador afegit correctament.");
+                    break;
 
-                case 3: {
+                // -------------------------
+                // READ ALL
+                // -------------------------
+                case 2:
+                    view.mostrarJugadors(
+                        model.getAllJugadors()
+                    );
+                    break;
+
+                // -------------------------
+                // UPDATE
+                // -------------------------
+                case 3:
                     String nom = view.demanarNom();
-                    String equip = view.demanarEquipNou();
-                    dao.actualitzarEquip(nom, equip);
-                }
-                break;
+                    System.out.print("Nou equip: ");
+                    String nouEquip = sc.nextLine();
+                    model.updateEquip(nom, nouEquip);
+                    System.out.println("Equip actualitzat.");
+                    break;
 
-                case 4: dao.eliminar(view.demanarNom());
-                break;
+                // -------------------------
+                // DELETE
+                // -------------------------
+                case 4:
+                    model.deleteJugador(view.demanarNom());
+                    System.out.println("Jugador eliminat.");
+                    break;
 
-                case 0: System.out.println("Sortint...");
-                break;
-                default: System.out.println("Opció no vàlida");
-                break;
+                // -------------------------
+                // BETWEEN DATES
+                // -------------------------
+                case 5:
+                    LocalDate inici = view.demanarData("Data inici");
+                    LocalDate fi = view.demanarData("Data fi");
+                    view.mostrarJugadors(
+                        model.getJugadorsByDate(inici, fi)
+                    );
+                    break;
+
+                // -------------------------
+                // FILTER
+                // -------------------------
+                case 6:
+                    System.out.print("Equip a cercar: ");
+                    String equip = sc.nextLine();
+                    view.mostrarJugadors(
+                        model.getJugadorsByEquip(equip)
+                    );
+                    break;
+
+                case 0:
+                    System.out.println("Sortint...");
+                    break;
+
+                default:
+                    System.out.println("Opció no vàlida.");
             }
 
         } while (opcio != 0);
