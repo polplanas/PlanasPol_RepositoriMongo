@@ -21,26 +21,22 @@ public class Controller {
 
             switch (opcio) {
 
-                // -------------------------
-                // CREATE
-                // -------------------------
+                // CREAR
                 case 1:
                     model.inserirJugador(view.llegirJugador());
                     System.out.println("Jugador afegit correctament.");
                     break;
 
-                // -------------------------
-                // READ ALL
-                // -------------------------
+
+                // LLISTAR TOT
                 case 2:
                     view.mostrarJugadors(
                         model.getAllJugadors()
                     );
                     break;
 
-                // -------------------------
-                // UPDATE
-                // -------------------------
+
+                // MODIFICAR
                 case 3:
                     String nom = view.demanarNom();
                     System.out.print("Nou equip: ");
@@ -49,17 +45,15 @@ public class Controller {
                     System.out.println("Equip actualitzat.");
                     break;
 
-                // -------------------------
-                // DELETE
-                // -------------------------
+
+                // ELIMINAR
                 case 4:
                     model.deleteJugador(view.demanarNom());
                     System.out.println("Jugador eliminat.");
                     break;
 
-                // -------------------------
-                // BETWEEN DATES
-                // -------------------------
+
+                // LLISTAR PER DATES
                 case 5:
                     LocalDate inici = view.demanarData("Data inici");
                     LocalDate fi = view.demanarData("Data fi");
@@ -68,9 +62,8 @@ public class Controller {
                     );
                     break;
 
-                // -------------------------
-                // FILTER
-                // -------------------------
+
+                // FILTRAR TOTS ELS JUGADOR PER EQUIP
                 case 6:
                     System.out.print("Equip a cercar: ");
                     String equip = sc.nextLine();
