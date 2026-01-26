@@ -26,9 +26,6 @@ public class Model {
         collection = db.getCollection("jugadors");
     }
 
-    // -------------------------
-    // Objecte -> Document
-    // -------------------------
     public Document toDocument(Jugador j) {
         return new Document("nom", j.getNom())
                 .append("cognom", j.getCognom())
@@ -40,23 +37,20 @@ public class Model {
                 .append("dataFitxatge", j.getDataFitxatge().toString());
     }
 
-    // -------------------------
-    // CREATE
-    // -------------------------
+
+    // CREAR
     public void inserirJugador(Jugador j) {
         collection.insertOne(toDocument(j));
     }
 
-    // -------------------------
-    // READ ALL
-    // -------------------------
+
+    // LLISTAR TOT
     public List<Document> getAllJugadors() {
         return collection.find().into(new ArrayList<>());
     }
 
-    // -------------------------
-    // UPDATE
-    // -------------------------
+
+    // ACTUALITZAR
     public void updateEquip(String nom, String nouEquip) {
         collection.updateOne(
                 eq("nom", nom),
@@ -64,16 +58,14 @@ public class Model {
         );
     }
 
-    // -------------------------
-    // DELETE
-    // -------------------------
+
+    // ELIMINAR
     public void deleteJugador(String nom) {
         collection.deleteOne(eq("nom", nom));
     }
 
-    // -------------------------
-    // BETWEEN DATES
-    // -------------------------
+
+    // LLISTAR FILTRANT PER DATA DE FITXATGE
     public List<Document> getJugadorsByDate(LocalDate dataInici, LocalDate dataFi) {
         return collection.find(and(
                 gte("dataFitxatge", dataInici.toString()),
@@ -81,9 +73,8 @@ public class Model {
         )).into(new ArrayList<>());
     }
 
-    // -------------------------
-    // FILTER (equip)
-    // -------------------------
+
+    // LLISTAR TOTS ELS JUGADOR FILTRATS PER EQUIP
     public List<Document> getJugadorsByEquip(String equip) {
         return collection.find(regex("equip", equip, "i"))
                 .into(new ArrayList<>());
