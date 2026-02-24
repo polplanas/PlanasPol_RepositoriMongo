@@ -62,16 +62,7 @@ public class Controller {
                     );
                     break;
 
-
-                // FILTRAR TOTS ELS JUGADOR PER EQUIP
-                case 6:
-                    System.out.print("Equip a cercar: ");
-                    String equip = sc.nextLine();
-                    view.mostrarJugadors(
-                        model.getJugadorsByEquip(equip)
-                    );
-                    break;
-
+                    
                 case 0:
                     System.out.println("Sortint...");
                     break;
